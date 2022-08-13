@@ -1,0 +1,12 @@
+{
+  "name": "intro-section-ft",
+  "version": "1.0.0",
+  "description": "![Design preview for the Intro section with dropdown navigation coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "stylus": "stylus -w ./styles/main.styl -o ./public/css/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
