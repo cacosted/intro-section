@@ -12,32 +12,38 @@
 </head>
 <body>
   <nav class="navbar">
-    <ul class="navbar--main">
-      <img src="" alt="logo">
-      <li>Features</li>
-      <li>Company</li>
-      <li>Careers</li>
-      <li>About</li>
-    </ul>
-    <ul class="navbar--login">
-      <li>Login</li>
-      <li>Register</li>
-    </ul>
+    <img class="navbar__logo" src="./images/logo.svg" alt="logo">
+    <button class="navbar__menu">
+      <img class="navbar__image" src="./images/icon-menu.svg" alt="menu">
+    </button>
+    <div class="navbar__container">
+      <ul class="navbar--main">
+        <li class="navbar__item">Features</li>
+        <li class="navbar__item">Company</li>
+        <li class="navbar__item">Careers</li>
+        <li class="navbar__item">About</li>
+      </ul>
+      <ul class="navbar--login">
+        <li class="navbar__item">Login</li>
+        <li class="navbar__item">Register</li>
+      </ul>
+    </div>
   </nav>
-  <main>
-    <figure>
-      <img src="" alt="Guy looking at a laptop">
-    </figure>
-    <section>
-      <h1>Make remote work</h1>
-      <p>Get your team in sync, no matter your location. Streamline processes, 
+  <main class="hero hero__container">
+    <picture class="hero__imageContainer">
+      <source srcset="./images/image-hero-desktop.png" media="(min-width:800px)">
+      <img class="hero__image" src="./images/image-hero-mobile.png" alt="Guy looking at a laptop">
+    </picture>
+    <section class="hero__section">
+      <h1 class="hero__title">Make remote work</h1>
+      <p class="hero__description">Get your team in sync, no matter your location. Streamline processes, 
         create team rituals, and watch productivity soar.</p>
-      <a href="">Learn more</a>
-      <footer>
-        <img src="" alt="databiz">
-        <img src="" alt="audio phile">
-        <img src="" alt="meet">
-        <img src="" alt="maker">
+      <a class="hero__button" href="#">Learn more</a>
+      <footer class="hero__footer">
+        <img class="logo__refer" src="./images/client-databiz.svg" alt="databiz">
+        <img class="logo__refer" src="./images/client-audiophile.svg" alt="audio phile">
+        <img class="logo__refer" src="./images/client-meet.svg" alt="meet">
+        <img class="logo__refer" src="./images/client-maker.svg" alt="maker">
       </footer>
     </section>
   </main>  
