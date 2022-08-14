@@ -2,10 +2,32 @@
   display: flex
   justify-content: space-between
   padding: 1em
-  
+
   &__menu
     border: none
     background-color: transparent
     
   &__container
-    display: none
+    position: absolute
+    inset: 0
+    rigth: 50%
+    background-color: transparentify(dark,.5)
+
+  &__content 
+    background: white
+    color: black
+    min-height: 100%
+    width: 70%
+    margin-inline-start: auto
+    ul
+      list-style: none
+  
+  &__item
+    &--todo
+      list-style: url('../images/icon-todo.svg')
+    &--calendar
+      list-style: url('../images/icon-calendar.svg')
+    &--reminder
+      list-style: url('../images/icon-reminders.svg')
+    &--planning
+      list-style: url('../images/icon-planning.svg')

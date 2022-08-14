@@ -31,7 +31,32 @@ ul {
   background-color: transparent;
 }
 .navbar__container {
-  display: none;
+  position: absolute;
+  inset: 0;
+  rigth: 50%;
+  background-color: rgba(0,0,0,0.5);
+}
+.navbar__content {
+  background: #fff;
+  color: #000;
+  min-height: 100%;
+  width: 70%;
+  margin-inline-start: auto;
+}
+.navbar__content ul {
+  list-style: none;
+}
+.navbar__item--todo {
+  list-style: url("../images/icon-todo.svg");
+}
+.navbar__item--calendar {
+  list-style: url("../images/icon-calendar.svg");
+}
+.navbar__item--reminder {
+  list-style: url("../images/icon-reminders.svg");
+}
+.navbar__item--planning {
+  list-style: url("../images/icon-planning.svg");
 }
 .hero {
   text-align: center;
@@ -70,4 +95,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+.hidden {
+  display: none;
 }
