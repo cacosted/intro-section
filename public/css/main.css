@@ -38,13 +38,44 @@ ul {
 }
 .navbar__content {
   background: #fff;
-  color: #000;
+  color: #696969;
   min-height: 100%;
   width: 70%;
   margin-inline-start: auto;
+  padding: 1.2em 2em;
+  display: flex;
+  flex-direction: column;
 }
 .navbar__content ul {
   list-style: none;
+}
+.navbar--main {
+  display: grid;
+  gap: 1em;
+}
+.navbar--login {
+  margin-block-start: 2em;
+  text-align: center;
+}
+.navbar--login > * {
+  padding-block: 0.8em;
+  border-radius: 15px;
+}
+.navbar__close {
+  align-self: end;
+}
+.navbar__title {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.navbar__arrow {
+  margin-inline-start: 0.5em;
+}
+.navbar__item ul {
+  padding-block-start: 1em;
+  padding-inline-start: 2em;
+  display: grid;
+  gap: 1em;
 }
 .navbar__item--todo {
   list-style: url("../images/icon-todo.svg");
@@ -57,6 +88,9 @@ ul {
 }
 .navbar__item--planning {
   list-style: url("../images/icon-planning.svg");
+}
+.navbar__item--register {
+  border: 2px solid #696969;
 }
 .hero {
   text-align: center;

@@ -15,14 +15,45 @@
 
   &__content 
     background: white
-    color: black
+    color: main
     min-height: 100%
     width: 70%
     margin-inline-start: auto
+    padding: 1.2em 2em
+    display: flex
+    flex-direction: column
+
     ul
       list-style: none
   
+  &--main
+    display: grid
+    gap: 1em
+  
+
+  &--login
+    margin-block-start: 2em
+    text-align: center
+
+    & > *
+      padding-block: .8em
+      border-radius: 15px
+
+  &__close
+    align-self: end
+
+  &__title
+    font-size: 1rem
+    font-weight: regular
+  &__arrow
+    margin-inline-start: .5em
+
   &__item
+    ul
+      padding-block-start: 1em
+      padding-inline-start: 2em
+      display: grid
+      gap: 1em
     &--todo
       list-style: url('../images/icon-todo.svg')
     &--calendar
@@ -31,3 +62,6 @@
       list-style: url('../images/icon-reminders.svg')
     &--planning
       list-style: url('../images/icon-planning.svg')
+    
+    &--register
+      border: 2px solid main
