@@ -19,7 +19,7 @@ img {
 ul {
   margin: 0;
   padding: 0;
-  list-style: 0;
+  list-style: none;
 }
 .navbar {
   display: flex;
@@ -46,8 +46,11 @@ ul {
   display: flex;
   flex-direction: column;
 }
-.navbar__content ul {
-  list-style: none;
+.navbar__item--sublist {
+  padding-block-start: 1em;
+  padding-inline-start: 2em;
+  display: grid;
+  gap: 1em;
 }
 .navbar--main {
   display: grid;
@@ -70,12 +73,6 @@ ul {
 }
 .navbar__arrow {
   margin-inline-start: 0.5em;
-}
-.navbar__item ul {
-  padding-block-start: 1em;
-  padding-inline-start: 2em;
-  display: grid;
-  gap: 1em;
 }
 .navbar__item--todo {
   list-style: url("../images/icon-todo.svg");
@@ -132,4 +129,7 @@ ul {
 }
 .hidden {
   display: none;
+}
+.turn-up {
+  transform: rotate(180deg);
 }
