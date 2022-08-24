@@ -1,7 +1,7 @@
 .navbar
   display: flex
   justify-content: space-between
-  padding: 1em
+  padding: 1.5em 1em
 
   &__menu
     border: none
@@ -10,9 +10,8 @@
   &__container
     position: absolute
     inset: 0
-    rigth: 50%
     background-color: transparentify(dark,.5)
-
+  
   &__content 
     background: white
     color: main
@@ -64,3 +63,62 @@
     
     &--register
       border: 2px solid main
+
+@media (min-width: 800px)
+  .navbar
+    display: flex;
+    align-items: center;
+    justify-content: start
+    gap: 1em
+    padding-inline: 2em
+
+    &__close,
+    &__menu
+      display: none
+    
+    &__title
+      display: flex;
+      align-items: center;
+    
+    &__content
+      background-color: transparent
+      margin: 0
+      padding: 0
+      width: auto
+      flex-direction: row
+      justify-content: space-between
+   
+    &--main
+      display: flex
+      align-items: center
+      justify-content: space-around
+      gap: 0
+      width: 50%
+
+    &--login
+      margin: 0
+      display: flex
+      align-items: center
+    &__item
+      position: relative
+    &__item--sublist
+      position: absolute
+      right: 0
+      background-color: light 
+      border-radius: 15px
+      padding: 1em 2em
+      box-shadow: 0px 0px 30px rgba(0,0,0,0.2)
+    
+    #features
+      padding-inline-start: 2.5em
+    &--login
+      gap: 1em
+
+    &__item--register
+      padding: .8em 1.2em;
+
+  div.navbar__container
+    display: block
+    position: static
+    background-color: transparent
+    width: 100%

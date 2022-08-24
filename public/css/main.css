@@ -24,7 +24,7 @@ ul {
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 1em;
+  padding: 1.5em 1em;
 }
 .navbar__menu {
   border: none;
@@ -33,7 +33,6 @@ ul {
 .navbar__container {
   position: absolute;
   inset: 0;
-  rigth: 50%;
   background-color: rgba(0,0,0,0.5);
 }
 .navbar__content {
@@ -88,6 +87,69 @@ ul {
 }
 .navbar__item--register {
   border: 2px solid #696969;
+}
+@media (min-width: 800px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1em;
+    padding-inline: 2em;
+  }
+  .navbar__close,
+  .navbar__menu {
+    display: none;
+  }
+  .navbar__title {
+    display: flex;
+    align-items: center;
+  }
+  .navbar__content {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .navbar--main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0;
+    width: 50%;
+  }
+  .navbar--login {
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  .navbar__item {
+    position: relative;
+  }
+  .navbar__item--sublist {
+    position: absolute;
+    right: 0;
+    background-color: #fafafa;
+    border-radius: 15px;
+    padding: 1em 2em;
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.2);
+  }
+  .navbar #features {
+    padding-inline-start: 2.5em;
+  }
+  .navbar--login {
+    gap: 1em;
+  }
+  .navbar__item--register {
+    padding: 0.8em 1.2em;
+  }
+  div.navbar__container {
+    display: block;
+    position: static;
+    background-color: transparent;
+    width: 100%;
+  }
 }
 .hero {
   text-align: center;
