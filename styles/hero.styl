@@ -7,7 +7,8 @@
     display: grid
     gap: 1em
     justify-items: center
-
+    padding-inline: 2em
+    
   &__title
     color: dark
     font-size: 2.5rem
@@ -28,10 +29,44 @@
     padding: 1em 2em
     margin-block: 1em
     width: max-content
-  
+    
+    &:hover
+      background-color: transparent
+      color: dark
+      outline: 2px solid dark
   &__footer
     margin-block: 1em
     width: 100%
     display: flex
     align-items: center
     justify-content: space-around
+
+@media (min-width: 800px)
+  span
+    display: block
+
+  .hero
+    display: flex
+    max-width: 1200px
+    margin-inline: auto
+    padding-block: 3em
+    padding-inline: 2em
+
+    &__imageContainer
+      order: 2
+    
+    &__section
+      text-align: start
+      width: 100%
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+
+    &__title
+      font-size: 4rem
+      margin-block-start: 1.5em
+
+    &__description
+      margin: 0
+    &__footer
+      margin: 0  

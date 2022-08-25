@@ -73,6 +73,9 @@ ul {
 .navbar__arrow {
   margin-inline-start: 0.5em;
 }
+.navbar__item {
+  cursor: pointer;
+}
 .navbar__item--todo {
   list-style: url("../images/icon-todo.svg");
 }
@@ -87,6 +90,12 @@ ul {
 }
 .navbar__item--register {
   border: 2px solid #696969;
+}
+.navbar__item--register:hover {
+  border-color: #141414;
+}
+.navbar__item:hover {
+  color: #141414;
 }
 @media (min-width: 800px) {
   .navbar {
@@ -103,6 +112,7 @@ ul {
   .navbar__title {
     display: flex;
     align-items: center;
+    padding-block: 1em;
   }
   .navbar__content {
     background-color: transparent;
@@ -126,6 +136,9 @@ ul {
   }
   .navbar__item {
     position: relative;
+  }
+  .navbar__item:hover {
+    color: #141414;
   }
   .navbar__item--sublist {
     position: absolute;
@@ -160,6 +173,7 @@ ul {
   display: grid;
   gap: 1em;
   justify-items: center;
+  padding-inline: 2em;
 }
 .hero__title {
   color: #141414;
@@ -182,12 +196,49 @@ ul {
   margin-block: 1em;
   width: max-content;
 }
+.hero__button:hover {
+  background-color: transparent;
+  color: #141414;
+  outline: 2px solid #141414;
+}
 .hero__footer {
   margin-block: 1em;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+@media (min-width: 800px) {
+  span {
+    display: block;
+  }
+  .hero {
+    display: flex;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-block: 3em;
+    padding-inline: 2em;
+  }
+  .hero__imageContainer {
+    order: 2;
+  }
+  .hero__section {
+    text-align: start;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .hero__title {
+    font-size: 4rem;
+    margin-block-start: 1.5em;
+  }
+  .hero__description {
+    margin: 0;
+  }
+  .hero__footer {
+    margin: 0;
+  }
 }
 .hidden {
   display: none;
