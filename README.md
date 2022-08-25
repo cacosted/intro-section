@@ -1,6 +1,11 @@
-# Frontend Mentor - Product preview card component solution
-
+# Responsive intro section
 This is a solution to the [Intro section with dropdown navigation challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+
+## Desktop 
+<img width="814" alt="image" src="https://user-images.githubusercontent.com/57645180/186547625-7b883a2d-e659-477e-9dd2-58d46cc00981.png">
+
+## Mobile
+<img width="280" alt="image" src="https://user-images.githubusercontent.com/57645180/186547563-2a196b8c-3b97-4893-8770-8cc852d0eb6a.png">
 
 ## Table of contents
 
@@ -25,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Demo: [Demo](/)
+- Live Demo: [Demo](https://cacosted-intro-section.netlify.app/)
 
 ## My process
 
